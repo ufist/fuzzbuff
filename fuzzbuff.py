@@ -30,7 +30,7 @@ def receive(sock):
 	else:
 		print(info, "Nothing received, continuing anyway")
 
-def spattern(host, port, pattern, prefix):
+def spattern(host, port, pattern, prefix, nw):
 	try:
 		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		s.connect((host, port))
@@ -56,7 +56,7 @@ def fuzzF(host, port, startf, endf, delay, char, pattern, prefix, nw):
 		print(info,"Creating pattern...")
 		result = subprocess.run(["msf-pattern_create", "-l", str(pattern)], capture_output=True, text=True)
 		patternO = result.stdout
-		spattern(host,port,patternO,prefix)
+		spattern(host,port,patternO,prefix,nw)
 	else:
 		pass
 	try:
