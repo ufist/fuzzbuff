@@ -40,6 +40,7 @@ def spattern(host, port, pattern, prefix):
 			print(info,"Attempting to receive any banners (10s)...")
 			receive(s)
 		print(good,"Pattern sent!")
+		s.close()
 		sys.exit()
 	except Exception as e:
 		print(error,f"{e}")
@@ -76,6 +77,7 @@ def fuzzF(host, port, startf, endf, delay, char, pattern, prefix, nw):
 				receive(s)
 			fuzz += startf
 			time.sleep(delay)
+		s.close()
 	except Exception as e:
 		print(error,f"{e}")
 
