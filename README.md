@@ -5,6 +5,8 @@
 Simple script I made that I use to find buffer overflows, little messy but it works
 Feel free to modify it to your liking
 
+Disclaimer: dont use this illegally only in safe virtual enviroments! Happy hunting
+
 ## Usage
 
 ```bash
