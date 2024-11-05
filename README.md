@@ -2,8 +2,10 @@
 [![Compatibility](https://img.shields.io/badge/python-3-brightgreen.svg)](fuzzbuff.py)
 [![Static Badge](https://img.shields.io/badge/-Linux-grey?logo=linux)](fuzzbuff.py)
 
-Simple script I made that I use to find buffer overflows, little messy but it works
+Simple script I made that I use to find buffer overflows through a tcp python socket, little messy but it works
 Feel free to modify it to your liking
+
+UDP version coming soon
 
 Disclaimer: dont use this illegally only in safe virtual enviroments! Happy hunting
 
